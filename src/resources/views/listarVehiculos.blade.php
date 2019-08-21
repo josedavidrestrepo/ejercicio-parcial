@@ -1,6 +1,6 @@
 @extends('app')
 
-@section('title', 'Inicio')
+@section('title', 'Listar Vehículos')
 
 @section('content')
     @isset($vehiculos)
