@@ -1,5 +1,7 @@
 <?php
 
+use App\Usuario;
+use App\Vehiculo;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -11,6 +13,26 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UsersTableSeeder::class);
+        Usuario::insert([
+            'cedula' => '1122',
+            'nombre' => 'ABCD'
+        ]);
+
+        Usuario::insert([
+            'cedula' => '3344',
+            'nombre' => 'EFGH'
+        ]);
+
+        Vehiculo::insert([
+            'placa' => 'ABC123',
+            'Marca' => 'Mazda',
+            'cedula_persona' => '1122'
+        ]);
+
+        Vehiculo::insert([
+            'placa' => 'DEF456',
+            'Marca' => 'Chevrolet',
+            'cedula_persona' => '3344'
+        ]);
     }
 }
