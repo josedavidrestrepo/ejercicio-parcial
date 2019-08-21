@@ -40,5 +40,11 @@ class DatabaseSeeder extends Seeder
             'Marca' => 'Toyota',
             'cedula_persona' => '3344'
         ]);
+
+        Vehiculo::insert([
+            'placa' => 'JKL012',
+            'Marca' => 'Toyota',
+            'cedula_persona' => '1122'
+        ]);
     }
 }
